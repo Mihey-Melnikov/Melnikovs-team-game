@@ -279,8 +279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b7e6641345c50499f4fa7d3c1cd236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   ispuse: 0
+  isplayer: 0
+  player: {fileID: 0}
   boxcollider: []
 --- !u!1 &4032521548222291957
 GameObject:
@@ -679,8 +680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b7e6641345c50499f4fa7d3c1cd236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   ispuse: 0
+  isplayer: 0
+  player: {fileID: 0}
   boxcollider: []
 --- !u!1 &4032521549437225131
 GameObject:

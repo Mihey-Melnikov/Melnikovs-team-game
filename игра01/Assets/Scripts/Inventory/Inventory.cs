@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Inventory : MonoBehaviour
 {
@@ -9,13 +10,13 @@ public class Inventory : MonoBehaviour
     [SerializeField] public Item take;
     
 
-    [SerializeField] public UnityEvent OnInventoryChanged;
+    [FormerlySerializedAs("OnInventoryChanged")] [SerializeField] public UnityEvent onInventoryChanged;
     
     public bool AddItems(Item item)
     {
         if (items.Count >= size) return false;
         items.Add(item);
-        OnInventoryChanged.Invoke();
+        onInventoryChanged.Invoke();
         return true;
     }
     
@@ -23,7 +24,7 @@ public class Inventory : MonoBehaviour
     {
         if (!items.Contains(item)) return false;
         items.Remove(item);
-        OnInventoryChanged.Invoke();
+        onInventoryChanged.Invoke();
         return true;
     }
 

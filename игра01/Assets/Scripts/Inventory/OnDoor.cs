@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OnDoor : MonoBehaviour
@@ -11,12 +9,10 @@ public class OnDoor : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (player.take == itemOn)
-        {
-            player.RemuveItems(itemOn);
-            player.OnInventoryChanged.Invoke();
-            player.take = null;
-            GameObject.Find(gameObjeck).GetComponent<ExitLevel>().enabled = true;
-        }
+        if (player.take != itemOn) return;
+        player.RemuveItems(itemOn);
+        player.onInventoryChanged.Invoke();
+        player.take = null;
+        GameObject.Find(gameObjeck).GetComponent<ExitLevel>().enabled = true;
     }
 }

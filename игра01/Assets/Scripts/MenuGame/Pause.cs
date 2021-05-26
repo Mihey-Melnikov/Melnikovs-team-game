@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,10 +6,10 @@ public class Pause : MonoBehaviour
 {
     public bool ispuse;
     public bool isplayer;
-    public GameObject player;
+    [SerializeField]private GameObject player;
     public List<GameObject> boxcollider;
 
-    void Update()
+    private void Update()
     {
         ispuse = Input.GetKeyDown(KeyCode.Escape) && !ispuse || ispuse;
         var pause = GameObject.Find("Pause");
@@ -51,13 +49,15 @@ public class Pause : MonoBehaviour
         
     }
 
-    public void RemoveBC()
+    private void RemoveBC()
     {
         foreach (var childr in boxcollider)
+        {
             childr.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 
-    public void AddBC()
+    private void AddBC()
     {
         foreach (var childr in boxcollider)
         {

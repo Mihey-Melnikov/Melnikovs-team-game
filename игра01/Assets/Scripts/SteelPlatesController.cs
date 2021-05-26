@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SteelPlatesController : MonoBehaviour
 {
-    public Transform player;
-    public float lenghtSteel;
-    
-    void Update()
+    [SerializeField]private Transform player;
+    [SerializeField]private float lenghtSteel;
+
+    private void Update()
     {
         foreach (var child in GetComponentsInChildren<Transform>())
         {

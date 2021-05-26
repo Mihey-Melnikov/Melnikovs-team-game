@@ -1,14 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float playerSpeed = 10;
+    private float playerSpeed = 10;
     private Rigidbody2D body;
     private Animator animator;
     private SpriteRenderer sprite;
+    private static readonly int IsRunning = Animator.StringToHash("isRunning");
 
     private void Start()
     {
@@ -27,6 +25,6 @@ public class PlayerController : MonoBehaviour
     {
         body.velocity = new Vector2(movementX * playerSpeed, body.velocity.y);
         sprite.flipX = (movementX < 0 || movementX == 0 && sprite.flipX);
-        animator.SetBool("isRunning", Mathf.Abs(movementX) > 0.05);
+        animator.SetBool(IsRunning, Mathf.Abs(movementX) > 0.05);
     }
 }

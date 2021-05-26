@@ -53,35 +53,38 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MenuGame\Arrow.cs" />
-     <Compile Include="Assets\Scripts\Game15\Game15Script.cs" />
-     <Compile Include="Assets\Scripts\Game15\Coord.cs" />
-     <Compile Include="Assets\Scripts\OffClock.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\MazeSpawner.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\Game15Script.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\Coord.cs" />
+     <Compile Include="Assets\Scripts\Room\OffClock.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\MazeSpawner.cs" />
      <Compile Include="Assets\Scripts\MenuGame\Pause.cs" />
+     <Compile Include="Assets\Scripts\Klass\Training.cs" />
+     <Compile Include="Assets\Scripts\Klass\ExitTraining.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\MazeGenerator.cs" />
-     <Compile Include="Assets\Scripts\Game15\ClickScript.cs" />
-     <Compile Include="Assets\Scripts\Game15\Map.cs" />
-     <Compile Include="Assets\Scripts\Inventory\On.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\BackMazeScript.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\MazeGenerator.cs" />
+     <Compile Include="Assets\Scripts\Inventory\UsageCollectableItemOn.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\ClickScript.cs" />
+     <Compile Include="Assets\Scripts\Inventory\TakingCollectableItem.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\Map.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\BackMazeScript.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
      <Compile Include="Assets\Scripts\Inventory\ExitLevel.cs" />
-     <Compile Include="Assets\Scripts\Game15\Back15GameSkript.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\Back15GameSkript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Paper.cs" />
-     <Compile Include="Assets\Scripts\Game15\Game.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\StartMazeGame.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ReceivingCollectableItem.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\Game.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\StartMazeGame.cs" />
      <Compile Include="Assets\Scripts\ObjectController.cs" />
      <Compile Include="Assets\Scripts\Inventory\OnDoor.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\Maze.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\Finish.cs" />
-     <Compile Include="Assets\Scripts\Inventory\CollectableItem.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\Maze.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\Finish.cs" />
+     <Compile Include="Assets\Scripts\Inventory\UsageCollectableItemReplacement.cs" />
      <Compile Include="Assets\Scripts\MenuGame\MenuButtonsScript.cs" />
      <Compile Include="Assets\Scripts\SteelPlatesController.cs" />
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\Cell.cs" />
-     <Compile Include="Assets\Scripts\GameMaze\PlayerControls.cs" />
-     <Compile Include="Assets\Scripts\Game15\PictureScript.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\Cell.cs" />
+     <Compile Include="Assets\Scripts\Room\GameMaze\PlayerControls.cs" />
+     <Compile Include="Assets\Scripts\Room\Game15\PictureScript.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -650,97 +653,97 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>C:/Users/visitor/Desktop/игра01/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Настя/Documents/GitHub/Melnikovs-team-game/игра01/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
