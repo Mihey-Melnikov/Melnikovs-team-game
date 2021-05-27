@@ -67,15 +67,15 @@
      <Compile Include="Assets\Scripts\Inventory\TakingCollectableItem.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\Map.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\BackMazeScript.cs" />
+     <Compile Include="Assets\Scripts\Room\PlayText.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
-     <Compile Include="Assets\Scripts\Inventory\ExitLevel.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\Back15GameSkript.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Inventory\ReceivingCollectableItem.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\Game.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\StartMazeGame.cs" />
      <Compile Include="Assets\Scripts\ObjectController.cs" />
-     <Compile Include="Assets\Scripts\Inventory\OnDoor.cs" />
+     <Compile Include="Assets\Scripts\Room\OnDoor.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\Maze.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\Finish.cs" />
      <Compile Include="Assets\Scripts\Inventory\UsageCollectableItemReplacement.cs" />
@@ -85,6 +85,8 @@
      <Compile Include="Assets\Scripts\Room\GameMaze\Cell.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\PlayerControls.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\PictureScript.cs" />
+     <Compile Include="Assets\Scripts\Room\Papper.cs" />
+     <Compile Include="Assets\Scripts\Room\BackPapper.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

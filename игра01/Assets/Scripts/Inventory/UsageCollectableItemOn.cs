@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class UsageCollectableItemOn : MonoBehaviour //использовать
 {
@@ -6,6 +7,7 @@ public class UsageCollectableItemOn : MonoBehaviour //использовать
     [SerializeField]private GameObject gameObjeck;
     [SerializeField]private Item itemOn;
     [SerializeField]private Item item;
+    [SerializeField] private string text;
 
     private void OnMouseDown()
     {
@@ -15,6 +17,10 @@ public class UsageCollectableItemOn : MonoBehaviour //использовать
             player.onInventoryChanged.Invoke();
             player.take = null;
             gameObjeck.AddComponent<ReceivingCollectableItem>().item = item;
+        }
+        else
+        {
+            PlayText.UpdateText(text);
         }
     }
 }

@@ -23,6 +23,7 @@ public class MazeSpawner : MonoBehaviour
         var mazeGame = GameObject.Find("MazeGame");
         foreach (var childr in mazeGame.GetComponentsInChildren<SpriteRenderer>())
             childr.sortingOrder += 6;
+        GameObject.Find("RuleMaze").GetComponent<Canvas>().sortingOrder += 6;
         GameObject.Find("backMaze").GetComponent<BoxCollider2D>().enabled = true;
         
         var window = GameObject.Find("Sky").transform;
@@ -57,6 +58,8 @@ public class MazeSpawner : MonoBehaviour
             childr.enabled = false;
         GameObject.Find("backMaze").GetComponent<BoxCollider2D>().enabled = false;
         pause.isplayer = false;
+        GameObject.Find("RuleMaze").GetComponent<Canvas>().sortingOrder -= 6;
+
     }
     
     

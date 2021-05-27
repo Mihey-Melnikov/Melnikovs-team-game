@@ -16,7 +16,7 @@ public class ExitTraining : MonoBehaviour
 
     private static void Exit()
     {
-        Application.LoadLevel("ExitTraining");
+        Application.LoadLevel("GameLevels");
     }
 
     public void OnMouseDown()

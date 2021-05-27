@@ -25,6 +25,7 @@ public class Game15Script : MonoBehaviour
         pictureGame.GetComponent<SpriteRenderer>().sortingOrder = 3;
         var back = GameObject.Find("back");
         back.GetComponent<SpriteRenderer>().sortingOrder = 4;
+        GameObject.Find("RulePicture").GetComponent<Canvas>().sortingOrder = 4;
         foreach (var childr in pictureGame.GetComponentsInChildren<BoxCollider2D>())
             childr.enabled = true;
         ShowButtons();
@@ -85,6 +86,7 @@ public class Game15Script : MonoBehaviour
         var back = GameObject.Find("back");
         back.GetComponent<SpriteRenderer>().sortingOrder = -1;
         back.GetComponent<BoxCollider2D>().enabled = false;
+        GameObject.Find("RulePicture").GetComponent<Canvas>().sortingOrder = -1;
         foreach (var childr in pictureGame.GetComponentsInChildren<BoxCollider2D>())
             childr.enabled = false;
         
@@ -96,6 +98,7 @@ public class Game15Script : MonoBehaviour
         pictureGame.GetComponent<SpriteRenderer>().sortingOrder = -1;
         var back = GameObject.Find("back");
         back.GetComponent<SpriteRenderer>().sortingOrder = -1;
+        GameObject.Find("RulePicture").GetComponent<Canvas>().sortingOrder = -1;
         for (var x = 0; x < Size; x++)
         for (var y = 0; y < Size; y++)
             ShowDigitAt(0, x, y);

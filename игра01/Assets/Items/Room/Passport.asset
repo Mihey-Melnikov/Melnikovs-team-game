@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7394cd38b3d4b4f8c1a48c2420998f, type: 3}
   m_Name: Passport
   m_EditorClassIdentifier: 
-  id: 4
   icon: {fileID: 21300000, guid: 4f9ac7991045cf447bcfdca4bd1aefb0, type: 3}
+  name: "\u041F\u0430\u0441\u043F\u043E\u0440\u0442"
