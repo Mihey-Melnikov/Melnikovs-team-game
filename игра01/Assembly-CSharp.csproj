@@ -53,6 +53,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MenuGame\Arrow.cs" />
+     <Compile Include="Assets\Scripts\Room\BackPapper.cs" />
+     <Compile Include="Assets\Scripts\Room\Papper.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\Game15Script.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\Coord.cs" />
      <Compile Include="Assets\Scripts\Room\OffClock.cs" />
@@ -85,8 +87,6 @@
      <Compile Include="Assets\Scripts\Room\GameMaze\Cell.cs" />
      <Compile Include="Assets\Scripts\Room\GameMaze\PlayerControls.cs" />
      <Compile Include="Assets\Scripts\Room\Game15\PictureScript.cs" />
-     <Compile Include="Assets\Scripts\Room\Papper.cs" />
-     <Compile Include="Assets\Scripts\Room\BackPapper.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
